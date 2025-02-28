@@ -11,10 +11,7 @@ public class Order {
 		this.user=user;
 		this.food=food;
 		this.date=date;
-	}
-	
-	public static void setCount(int count_) {
-		count = count_;
+		count++;
 	}
 
 	public User getUser() {
