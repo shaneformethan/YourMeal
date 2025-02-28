@@ -13,7 +13,6 @@ public class Application {
 	public void order(User user, Food food, String date) {
 		orderList.add(new Order(user, food, date));
 		System.out.println(user.getName() + " ordered "+ food.getName() +" on " + date);
-		Order.setCount(Order.getCount()+1);
 	}
 
 	public void displayFoods() {
@@ -21,12 +20,7 @@ public class Application {
 		System.out.println("----------------------------------------------------------------------------------------------------");
 		
 		for(Food food: foodList) {
-			System.out.printf("%s (%d Kcal)\n", food.getName(), food.getCalories());
-			System.out.println("Description: " + food.getDesc());
-			System.out.println("Spicy Level: " + food.getSpicyLevel());
-			System.out.println("Ingredients:");
-			food.displayIngredient();
-			System.out.println("----------------------------------------------------------------------------------------------------");
+			food.displayFood();
 		}
 		
 	}
