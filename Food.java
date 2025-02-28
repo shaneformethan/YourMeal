@@ -45,6 +45,15 @@ public class Food {
 		ingredientList.add(ingredient);
 	}
 
+	public void displayFood() {
+		System.out.printf("%s (%d Kcal)\n", name, calories);
+		System.out.println("Description: " + desc);
+		System.out.println("Spicy Level: " + spicyLevel);
+		System.out.println("Ingredients:");
+		displayIngredient();
+		System.out.println("----------------------------------------------------------------------------------------------------");
+	
+	}
 
 	public void displayIngredient() {
 		for(Ingredient ingredient : ingredientList) {

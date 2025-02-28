@@ -20,12 +20,7 @@ public class Application {
 		System.out.println("----------------------------------------------------------------------------------------------------");
 		
 		for(Food food: foodList) {
-			System.out.printf("%s (%d Kcal)\n", food.getName(), food.getCalories());
-			System.out.println("Description: " + food.getDesc());
-			System.out.println("Spicy Level: " + food.getSpicyLevel());
-			System.out.println("Ingredients:");
-			food.displayIngredient();
-			System.out.println("----------------------------------------------------------------------------------------------------");
+			food.displayFood();
 		}
 		
 	}
